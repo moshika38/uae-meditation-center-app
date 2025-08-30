@@ -12,3 +12,5 @@ workflows:
         script: flutter build ios --simulator --no-codesign
     artifacts:
       - build/ios/iphonesimulator/**/*.app
+
+#
