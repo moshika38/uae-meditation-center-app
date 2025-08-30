@@ -12,7 +12,8 @@ workflows:
       # Add environment variables for code signing
     scripts:
       - name: Set up code signing
-        # Commands to set up your code signing certificates
+        script: |
+          # Commands to set up your code signing certificates
       - name: Build for App Store
         script: |
           flutter build ipa --release
