@@ -1,36 +1,14 @@
-# A basic Codemagic.yaml file for a Flutter project
-
-# The workflows key is required
 workflows:
-  # The `release` workflow is for App Store/TestFlight distribution
-  release:
-    name: Flutter App Store Release
+  ios-simulator:
+    name: iOS Simulator Build
+    max_build_duration: 60
     environment:
-      flutter: latest
+      flutter: stable
       xcode: latest
-      cocoapods: default
-      # Add environment variables for code signing
     scripts:
-      - name: Set up code signing
-        script: |
-          # Commands to set up your code signing certificates
-      - name: Build for App Store
-        script: |
-          flutter build ipa --release
+      - name: Get Flutter packages
+        script: flutter pub get
+      - name: Build iOS app for simulator
+        script: flutter build ios --simulator --no-codesign
     artifacts:
-      - build/ios/ipa/*.ipa
-
-  # This is the new workflow for the simulator build
-  simulator-build:
-    name: Flutter iOS Simulator Build
-    # Use the same environment as your other workflows
-    environment:
-      flutter: latest
-      xcode: latest
-      cocoapods: default
-    scripts:
-      - name: Build for iOS Simulator
-        script: |
-          flutter build ios --simulator --no-codesign
-    artifacts:
-      - build/ios/iphonesimulator/Runner.app
+      - build/ios/iphonesimulator/**/*.app
