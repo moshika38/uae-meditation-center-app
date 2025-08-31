@@ -8,9 +8,16 @@ workflows:
     scripts:
       - name: Get Flutter packages
         script: flutter pub get
+
+      - name: Install CocoaPods
+        script: |
+          cd ios
+          pod deintegrate
+          pod install --repo-update
+          cd ..
+
       - name: Build iOS app for simulator
         script: flutter build ios --simulator --no-codesign
+
     artifacts:
       - build/ios/iphonesimulator/**/*.app
-
-#
