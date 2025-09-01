@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "399426774282",
+    "project_id": "meditation-center-uae",
+    "storage_bucket": "meditation-center-uae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399426774282:android:1d4972eb39180d1dcd06f3",
+        "android_client_info": {
+          "package_name": "com.example.uae_meditation_center"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399426774282-dvhegpi669nuiteoqtjpgm3p214vtm08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uae_meditation_center",
+            "certificate_hash": "0a75696e5ab803a7be8dd18f8464c73b4fc3863f"
+          }
+        },
+        {
+          "client_id": "399426774282-hkv2uv0no1gmf4lrm1hiktpo9epqqf0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDXCx56seR31yyZ7my861qHL2LD3liVjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399426774282-hkv2uv0no1gmf4lrm1hiktpo9epqqf0l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "399426774282-12dcp4pu4h9tuu0l5vrs6dode59dnhr5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ceylonMeditationCenter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

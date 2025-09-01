@@ -24,10 +24,7 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
@@ -62,4 +59,13 @@ class DefaultFirebaseOptions {
     iosClientId: '399426774282-b1t2hlr1rensh86qdpg84gf5qagldt9h.apps.googleusercontent.com',
     iosBundleId: 'com.example.uaeMeditationCenter',
   );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyDDXCx56seR31yyZ7my861qHL2LD3liVjs',
+    appId: '1:399426774282:android:1d4972eb39180d1dcd06f3',
+    messagingSenderId: '399426774282',
+    projectId: 'meditation-center-uae',
+    storageBucket: 'meditation-center-uae.firebasestorage.app',
+  );
+
 }
